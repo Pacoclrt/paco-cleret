@@ -29,24 +29,6 @@ site/            site statique (HTML, CSS, JS), déployé sur GitHub Pages
 verificateur/    sources Go du vérificateur et outil de build
 ```
 
-## Lancer en local
-
-```bash
-cd site
-python3 -m http.server 8000
-```
-
-Ouvre ensuite http://localhost:8000. Un serveur est nécessaire pour la vérification du code, même en local.
-
-## Reconstruire le vérificateur
-
-À faire uniquement si tu modifies les cas de test (`verificateur/verif/exercises.go`) :
-
-```bash
-cd verificateur
-go run ./cmd/build
-```
-
 ## Technologies
 
 HTML / CSS / JavaScript sans framework · Go compilé en WebAssembly · [`go/types`](https://pkg.go.dev/go/types) pour la compilation · [yaegi](https://github.com/traefik/yaegi) pour l'exécution.
