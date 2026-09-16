@@ -35,4 +35,4 @@ HTML / CSS / JavaScript sans framework · Go compilé en WebAssembly · [`go/typ
 
 ## Auteur
 
-**Paco Cleret**, étudiant en cybersécurité à Ynov Campus Rouen.
+**Paco Cleret**, étudiant en cybersécurité à Ynov Campus Rouen avec Claude Code forfait Pro.
