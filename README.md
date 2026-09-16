@@ -2,7 +2,7 @@
 
 Site de révision de la **piscine Golang** (Ynov Campus Rouen B1) : les 36 épreuves des quêtes 1 à 4, à savoir recoder devant le jury.
 
-**Site en ligne** : https://TON-PSEUDO.github.io/TON-REPO/ <!-- remplace par l'adresse de ton site GitHub Pages -->
+**Site en ligne** : https://www.paco-cleret.fr
 
 ## Fonctionnalités
 
