@@ -65,7 +65,9 @@ type Utilisateur struct {
 	Nom string
 }
 
-users := []Utilisateur{{1, "Ada"}, {2, "Linus"}, {3, "Grace"}}
+users := []Utilisateur{
+	{1, "Ada"}, {2, "Linus"}, {3, "Grace"},
+}
 
 i := slices.IndexFunc(users, func(u Utilisateur) bool {
 	return u.Nom == "Linus"
