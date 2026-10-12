@@ -1,0 +1,68 @@
+[
+  {
+    "id": "demarrer",
+    "title": "Démarrer",
+    "description": "Installer Go, écrire son premier programme et maîtriser l'outil go.",
+    "icon": "rocket"
+  },
+  {
+    "id": "bases",
+    "title": "Les bases",
+    "description": "Variables, constantes, types, chaînes, opérateurs et conversions.",
+    "icon": "box"
+  },
+  {
+    "id": "controle",
+    "title": "Contrôle du flux",
+    "description": "Conditions, boucles, switch et defer.",
+    "icon": "branch"
+  },
+  {
+    "id": "donnees",
+    "title": "Structures de données",
+    "description": "Tableaux, slices, maps, structs et pointeurs.",
+    "icon": "layers"
+  },
+  {
+    "id": "fonctions",
+    "title": "Fonctions et méthodes",
+    "description": "Fonctions, closures, méthodes et récursivité.",
+    "icon": "braces"
+  },
+  {
+    "id": "types",
+    "title": "Types avancés",
+    "description": "Interfaces, composition, génériques et types personnalisés.",
+    "icon": "shapes"
+  },
+  {
+    "id": "erreurs",
+    "title": "Gestion des erreurs",
+    "description": "Le type error, le wrapping, panic et recover.",
+    "icon": "alert"
+  },
+  {
+    "id": "concurrence",
+    "title": "Concurrence",
+    "description": "Goroutines, channels, select, sync et context.",
+    "icon": "cpu"
+  },
+  {
+    "id": "stdlib",
+    "title": "Bibliothèque standard",
+    "description": "strings, fichiers, JSON, HTTP, dates, tri et maths.",
+    "icon": "library"
+  },
+  {
+    "id": "outils",
+    "title": "Outils et bonnes pratiques",
+    "description": "Tests, conventions de style, mémoire et performance.",
+    "icon": "wrench"
+  },
+  {
+    "id": "faq",
+    "title": "Questions fréquentes",
+    "description": "Des réponses directes aux questions qu'on se pose vraiment.",
+    "icon": "help"
+  }
+]

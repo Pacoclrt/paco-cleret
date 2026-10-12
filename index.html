@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gopédia — La documentation Go en français</title>
+  <meta name="description" content="Documentation complète du langage Go (Golang) en français : chaque notion expliquée en version rapide et en version détaillée, avec une recherche qui comprend vos questions.">
+  <meta name="author" content="Paco CLERET">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Gopédia — La documentation Go en français">
+  <meta property="og:description" content="Apprenez Go simplement : l'essentiel en 30 secondes, puis tous les détails.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    // Applique le thème choisi avant l'affichage pour éviter un flash
+    (function () {
+      try {
+        var t = localStorage.getItem('gopedia-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { /* stockage indisponible */ }
+    })();
+  </script>
+</head>
+<body data-view="home">
+  <a class="skip-link" href="#gd-main">Aller au contenu</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button class="icon-btn menu-btn" id="gd-menu" type="button" aria-label="Ouvrir le menu" aria-controls="gd-sidebar" aria-expanded="false"></button>
+
+      <a class="brand" href="#/" aria-label="Gopédia, retour à l'accueil">
+        <span class="brand-mark" aria-hidden="true">Go</span>
+        <span class="brand-name">Gopédia</span>
+        <span class="brand-tag">FR</span>
+      </a>
+
+      <button class="search-trigger" id="gd-search-trigger" type="button" aria-label="Rechercher dans la documentation" aria-keyshortcuts="Control+K Meta+K">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <span class="search-trigger-label">Rechercher une notion, une question…</span>
+        <kbd class="kbd" aria-hidden="true">Ctrl K</kbd>
+      </button>
+
+      <nav class="top-nav" aria-label="Raccourcis">
+        <a href="#/categorie/faq">Questions</a>
+        <a href="#/aide-memoire">Aide-mémoire</a>
+      </nav>
+
+      <button class="icon-btn" id="gd-theme" type="button" aria-label="Changer de thème"></button>
+    </div>
+    <div class="progress" aria-hidden="true"><div class="progress-bar" id="gd-progress"></div></div>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" id="gd-sidebar" aria-label="Navigation de la documentation"></aside>
+    <div class="backdrop" id="gd-backdrop" hidden></div>
+    <main class="main" id="gd-main" tabindex="-1">
+      <noscript>
+        <div class="page-wrap"><p class="doc-lead">Gopédia a besoin de JavaScript pour afficher la documentation et la recherche.</p></div>
+      </noscript>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#/" aria-label="Gopédia, retour à l'accueil">
+          <span class="brand-mark" aria-hidden="true">Go</span>
+          <span class="brand-name">Gopédia</span>
+        </a>
+        <p>La documentation du langage Go, en français, pour apprendre vite et comprendre en profondeur.</p>
+      </div>
+      <nav class="footer-links" aria-label="Liens du pied de page">
+        <a href="#/introduction">Découvrir Go</a>
+        <a href="#/categorie/faq">Questions fréquentes</a>
+        <a href="#/aide-memoire">Aide-mémoire</a>
+        <a href="https://go.dev/doc/" target="_blank" rel="noopener noreferrer">Documentation officielle<span class="sr-only"> (nouvel onglet)</span></a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright">© <span id="gd-year">2026</span> Paco CLERET — <a href="https://paco-cleret.fr" target="_blank" rel="noopener">paco-cleret.fr</a>. Tous droits réservés.</p>
+      <p class="disclaimer">Documentation indépendante, non affiliée au projet Go. Go est une marque de Google LLC.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="gd-top" type="button" aria-label="Revenir en haut de la page">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7M12 19V5"/></svg>
+  </button>
+
+  <dialog class="palette" id="gd-palette" aria-label="Rechercher dans la documentation">
+    <div class="palette-box search-zone">
+      <div class="palette-input-row">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <label for="gd-palette-input" class="sr-only">Rechercher</label>
+        <input id="gd-palette-input" type="search" autocomplete="off" spellcheck="false" enterkeyhint="go"
+               placeholder="Une notion ou une question…" role="combobox" aria-expanded="true"
+               aria-controls="gd-palette-list" aria-autocomplete="list">
+        <button class="palette-close" id="gd-palette-close" type="button" aria-label="Fermer la recherche"><kbd class="kbd">Échap</kbd></button>
+      </div>
+      <div class="palette-body">
+        <div class="res-list" id="gd-palette-list" role="listbox" aria-label="Résultats de recherche"></div>
+      </div>
+      <div class="palette-foot">
+        <span><kbd class="kbd">↑</kbd><kbd class="kbd">↓</kbd> naviguer</span>
+        <span><kbd class="kbd">↵</kbd> ouvrir</span>
+        <span class="palette-foot-hide"><kbd class="kbd">Échap</kbd> fermer</span>
+        <a class="palette-all" id="gd-palette-all" href="#/recherche" hidden>Tous les résultats →</a>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="sr-only" id="gd-live" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/markdown.js"></script>
+  <script src="assets/js/highlight.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
